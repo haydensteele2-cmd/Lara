@@ -234,6 +234,22 @@
   .glearn:hover{color:var(--coral)}
   @media(max-width:820px){.gcard{padding:28px 22px}.gstats{gap:24px}}
 
+  /* TAB COLORS: each audience gets its own palette color */
+  .seg button[data-tab="families"].active{background:#1F6B64}
+  .seg button[data-tab="you"].active{background:#B94A32}
+  .gcard[data-panel="families"]{background:#1F6B64}
+  .gcard[data-panel="you"]{background:#B94A32}
+  .gcard[data-panel="families"] .gdesc,.gcard[data-panel="you"] .gdesc,
+  .gcard[data-panel="families"] .gitem p,.gcard[data-panel="you"] .gitem p,
+  .gcard[data-panel="families"] .gstat .l,.gcard[data-panel="you"] .gstat .l{color:rgba(255,255,255,.94)}
+  .gcard[data-panel="families"] .gitem b .arr,.gcard[data-panel="you"] .gitem b .arr,
+  .gcard[data-panel="families"] .gstat .n,.gcard[data-panel="you"] .gstat .n,
+  .gcard[data-panel="families"] .gtag .dot,.gcard[data-panel="you"] .gtag .dot{color:#FFE2A0;background-color:transparent}
+  .gcard[data-panel="families"] .gtag .dot,.gcard[data-panel="you"] .gtag .dot{background:#FFE2A0}
+  .gcard[data-panel="families"] .gitem,.gcard[data-panel="you"] .gitem{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2)}
+  .gcard[data-panel="families"] .gitem:hover,.gcard[data-panel="you"] .gitem:hover{background:rgba(255,255,255,.17);border-color:rgba(255,255,255,.32)}
+  .gcard[data-panel="families"] .gstats,.gcard[data-panel="you"] .gstats{border-top-color:rgba(255,255,255,.25)}
+
   /* IMAGE-FORWARD SERVICE ROWS */
   .svc-rows{display:flex;flex-direction:column;gap:54px;margin-top:54px}
   .svc-row{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:center}
