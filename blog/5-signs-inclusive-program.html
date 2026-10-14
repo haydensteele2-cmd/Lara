@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>5 Signs Your Program Isn't as Inclusive as You Think | Disability Intersection</title>
+<meta name="description" content="Five common signs a disability program is more deficit-based than person-centered, and the practical, low-cost fix for each one.">
+<link rel="canonical" href="https://disabilityintersection.org/blog/5-signs-inclusive-program">
+<meta property="og:type" content="article">
+<meta property="og:title" content="5 Signs Your Program Isn't as Inclusive as You Think">
+<meta property="og:description" content="Five common signs a disability program is more deficit-based than person-centered, and the practical, low-cost fix for each one.">
+<meta property="og:url" content="https://disabilityintersection.org/blog/5-signs-inclusive-program">
+<meta property="og:image" content="https://disabilityintersection.org/images/social-share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="robots" content="index, follow">
+<meta name="keywords" content="Program Development, Inclusion, Nonprofits, Person-Centered Care">
+<meta name="author" content="Lara Minges">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --coral:#F2785C;
+    --sun:#F0B64B;
+    --teal:#3BAFA3;
+    --sage:#7C9885;
+    --plum:#3B2C57;
+    --sky:#9DCBE0;
+    --sand:#FBF1E2;
+    --paper:#FFFBF4;
+    --ink:#2E2A3F;
+    --line:rgba(46,42,63,.12);
+    --muted:#6E6680;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;overflow-x:hidden}
+  h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:500;line-height:1.13;letter-spacing:-.01em}
+  .fun{font-family:'Fredoka',sans-serif}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:1px solid var(--line)}
+  .nav-inner{display:flex;align-items:center;justify-content:space-between;height:78px}
+  .logo{display:flex;align-items:center;gap:11px;font-family:'Fredoka';font-weight:600;font-size:21px}
+  .mark{width:28px;height:28px;border-radius:50%;background:var(--teal);position:relative}
+  .mark:after{content:"";position:absolute;width:28px;height:28px;border-radius:50%;background:var(--coral);left:12px;top:0;mix-blend-mode:multiply;opacity:.85}
+  .nav-links{display:flex;gap:28px;align-items:center;font-size:15px;font-weight:600;color:var(--muted)}
+  .nav-links a:not(.btn):hover{color:var(--ink)}
+  .btn{display:inline-block;background:var(--ink);color:#fff;font-family:'Fredoka';font-weight:500;font-size:15px;padding:11px 22px;border-radius:40px;transition:transform .18s, background .2s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn.coral{background:var(--coral)}
+  .btn.coral:hover{background:#e26a4f}
+  .btn.teal{background:var(--teal)}
+  .btn.teal:hover{background:#34a097}
+  .btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+  .btn.ghost:hover{background:var(--sand)}
+  @media(max-width:820px){.nav-links a:not(.btn){display:none}}
+
+  section{padding:70px 0}
+  .center{text-align:center}
+  .kicker{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--teal)}
+
+  /* BREADCRUMB */
+  .crumbs{padding:20px 0 0;font-size:14px;color:var(--muted)}
+  .crumbs a:hover{color:var(--teal)}
+  .crumbs span{margin:0 8px;opacity:.6}
+
+  /* ARTICLE HEADER */
+  .art-head{background:linear-gradient(180deg,var(--sand),var(--paper));padding:36px 0 30px}
+  .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--teal)}
+  .eyebrow:before{content:"";width:24px;height:2px;background:var(--coral)}
+  h1{font-size:clamp(32px,4.6vw,50px);font-weight:400;margin:18px 0 18px;max-width:820px}
+  .byline{display:flex;flex-wrap:wrap;gap:14px;align-items:center;color:var(--muted);font-size:14.5px;margin-bottom:18px}
+  .byline b{color:var(--ink)}
+  .dot-sep{opacity:.5}
+  .art-tags{display:flex;flex-wrap:wrap;gap:8px}
+  .art-tags a{background:#fff;border:1.5px solid var(--line);border-radius:30px;padding:6px 14px;font-size:13px;font-weight:600}
+  .art-tags a:hover{border-color:var(--teal);color:var(--teal)}
+
+  /* ARTICLE BODY */
+  .prose{max-width:720px}
+  .prose p{color:var(--ink);font-size:17.5px;margin-bottom:18px}
+  .prose h2{font-size:clamp(24px,3vw,30px);font-weight:500;margin:40px 0 14px}
+  .prose h2 .num{color:var(--teal);font-family:'Fredoka';margin-right:10px}
+  .prose .fix{background:#fff;border-left:4px solid var(--teal);border-radius:0 16px 16px 0;padding:16px 20px;margin:0 0 22px;font-size:16px;color:var(--muted)}
+  .prose .fix b{color:var(--ink)}
+  .hl-teal,.hl-coral{font-weight:700;padding:.04em .32em;border-radius:6px}
+  .hl-teal{background:rgba(59,175,163,.16)}
+  .hl-coral{background:rgba(242,120,92,.16)}
+
+  /* QUICK ANSWER BOX */
+  .quick{background:var(--plum);color:#fff;border-radius:22px;padding:26px 28px;margin-bottom:30px}
+  .quick .kicker{color:var(--sun);margin-bottom:8px;display:block}
+  .quick p{color:rgba(255,251,244,.92);font-size:16.5px;margin:0}
+
+  /* AUTHOR CARD */
+  .author-card{max-width:720px;display:flex;gap:18px;align-items:flex-start;background:var(--sand);border:1px solid var(--line);border-radius:22px;padding:24px 26px;margin-top:20px}
+  .author-card .av{width:52px;height:52px;border-radius:50%;background:linear-gradient(160deg,var(--sky),var(--sage));flex:none;display:flex;align-items:center;justify-content:center;font-family:'Fredoka';font-weight:600;font-size:17px;color:#fff}
+  .author-card p{color:var(--muted);font-size:15px;margin:4px 0 0}
+  .author-card b{font-family:'Fraunces';font-size:18px}
+
+  /* FAQ */
+  .faq{max-width:780px;margin:44px auto 0}
+  .faq details{border:1px solid var(--line);border-radius:16px;background:#fff;padding:4px 22px;margin-bottom:14px}
+  .faq summary{list-style:none;cursor:pointer;font-family:'Fraunces';font-size:19px;font-weight:500;padding:18px 0;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary:after{content:"+";font-family:'Fredoka';font-size:24px;color:var(--teal)}
+  .faq details[open] summary:after{content:"-"}
+  .faq details p{color:var(--muted);font-size:16px;padding:0 0 18px}
+  .sec-h{font-size:clamp(28px,3.6vw,38px);font-weight:400;margin:10px 0 14px}
+  .sec-sub{font-size:17px;color:var(--muted);max-width:600px;margin:0 auto}
+
+  /* OTHER POSTS / SERVICES */
+  .other{display:flex;flex-wrap:wrap;gap:14px;margin-top:36px;justify-content:center}
+  .other a{background:#fff;border:1px solid var(--line);border-radius:40px;padding:12px 22px;font-weight:600;font-size:14.5px;box-shadow:0 6px 18px rgba(46,42,63,.05)}
+  .other a:hover{border-color:var(--teal);color:var(--teal)}
+
+  /* CTA */
+  .cta{background:var(--teal);color:#fff;text-align:center}
+  .cta h2{font-size:clamp(28px,4.4vw,46px);font-weight:400;margin-bottom:14px}
+  .cta h2 em{font-style:italic;color:var(--sun)}
+  .cta p{font-size:19px;max-width:540px;margin:0 auto 30px;opacity:.95}
+  .cta .btn{background:#fff;color:var(--teal)}
+  .cta .btn:hover{background:var(--ink);color:#fff}
+
+  /* FOOTER */
+  footer{background:var(--ink);color:var(--paper);padding:58px 0 28px}
+  .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}
+  footer h5{font-family:'Fredoka';font-size:17px;font-weight:500;margin-bottom:13px;color:var(--sun)}
+  footer a{display:block;padding:5px 0;color:rgba(255,251,244,.78);font-size:15px}
+  footer a:hover{color:var(--sun)}
+  .foot-bottom{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:14px;color:rgba(255,251,244,.6)}
+  .foot-bottom a{display:inline;padding:0;color:rgba(255,251,244,.6);text-decoration:underline}
+  .foot-bottom a:hover{color:var(--sun)}
+  @media(max-width:820px){.foot-grid{grid-template-columns:1fr 1fr}}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease, transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+
+  /* SIDEBAR — a real grid column next to the text, not a floating fixed
+     element, so it sits beside the article instead of out in empty page
+     whitespace, and sticks only while that section scrolls by */
+  .article-grid{display:grid;grid-template-columns:1fr 300px;gap:48px;align-items:start}
+  .article-grid>.prose{grid-column:1}
+  .article-grid>.side-rail{grid-column:2}
+  .side-rail{position:sticky;top:110px;display:flex;flex-direction:column;gap:20px}
+
+  .toc-card{background:var(--sand);border:1px solid var(--line);border-radius:22px;padding:26px 24px}
+  .toc-label{display:block;font-family:'Fredoka';font-size:12.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+  .toc-list{display:flex;flex-direction:column;gap:2px}
+  .toc-list a{display:flex;gap:12px;align-items:flex-start;padding:9px 10px 9px 12px;margin:0 -10px;border-radius:10px;border-left:3px solid transparent;font-size:14.5px;line-height:1.35;color:var(--muted);font-weight:500;transition:border-color .15s,color .15s}
+  .toc-list a .tnum{font-family:'Fredoka';font-weight:700;color:var(--sage);flex:none;width:16px}
+  .toc-list a:hover{color:var(--ink)}
+  .toc-list a.active{border-left-color:var(--teal);color:var(--ink);font-weight:700}
+  .toc-list a.active .tnum{color:var(--teal)}
+
+  .rail-cta{display:block;background:var(--plum);border-radius:22px;padding:26px 24px;transition:transform .18s}
+  .rail-cta:hover{transform:translateY(-2px)}
+  .rail-cta h4{color:#fff;font-size:19px;font-weight:500;margin-bottom:8px}
+  .rail-cta p{color:rgba(255,251,244,.72);font-size:14px;line-height:1.5;margin-bottom:18px}
+  .rail-cta .pill{display:block;text-align:center;background:var(--sun);color:var(--ink);font-family:'Fredoka';font-weight:600;font-size:14.5px;padding:13px 16px;border-radius:40px;transition:background .18s}
+  .rail-cta:hover .pill{background:#e6a73f}
+
+  @media(max-width:980px){.article-grid{grid-template-columns:1fr}.side-rail{display:none}}
+
+  /* SHARE BAR */
+  .share-bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
+  .share-bar.bordered{padding:26px 0;border-top:1px solid var(--line);margin-top:8px}
+  .share-label{font-family:'Fredoka';font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+  .share-btn{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid var(--line);border-radius:40px;padding:10px 18px;font-family:'Fredoka';font-weight:600;font-size:14.5px;color:var(--ink);transition:border-color .18s,color .18s}
+  .share-btn:hover{border-color:var(--teal);color:var(--teal)}
+  .share-btn .sico{font-family:'Fredoka';font-weight:700}
+
+  /* FEATURED IMAGE */
+  .featured-image{aspect-ratio:3/1;border-radius:22px;overflow:hidden;border:1px solid var(--line);position:relative;margin-bottom:0}
+  .featured-image img{width:100%;height:100%;object-fit:cover;display:block}
+  .fi-ph{position:absolute;inset:0;background:linear-gradient(150deg,#E7E2F2,#D9D2EA);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;padding:20px}
+  .fi-ph .fi-tag{position:absolute;top:14px;left:14px;background:rgba(255,251,244,.85);border:1px solid var(--line);border-radius:30px;padding:5px 13px;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;color:var(--ink)}
+  .fi-ph .fi-ico{font-size:40px}
+  .fi-ph .fi-cap{font-size:12.5px;font-weight:600;color:var(--ink);opacity:.65;max-width:260px}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://disabilityintersection.org/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://disabilityintersection.org/blog" },
+    { "@type": "ListItem", "position": 3, "name": "5 Signs Your Program Isn't as Inclusive as You Think", "item": "https://disabilityintersection.org/blog/5-signs-inclusive-program" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "5 Signs Your Program Isn't as Inclusive as You Think",
+  "description": "Five common signs a disability program is more deficit-based than person-centered, and the practical, low-cost fix for each one.",
+  "url": "https://disabilityintersection.org/blog/5-signs-inclusive-program",
+  "datePublished": "2026-09-13",
+  "dateModified": "2026-09-13",
+  "author": { "@type": "Person", "name": "Lara Minges", "jobTitle": "Disability Consultant, Functional Nutritionist & Coach" },
+  "publisher": { "@type": "Person", "name": "Lara Minges" },
+  "keywords": ["Program Development", "Inclusion", "Nonprofits", "Person-Centered Care"],
+  "about": { "@type": "Thing", "name": "Person-centered disability program development" },
+  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://disabilityintersection.org/blog/5-signs-inclusive-program" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    { "@type": "Question", "name": "What does it mean for a disability program to be \"person-centered\" instead of \"deficit-based\"?", "acceptedAnswer": { "@type": "Answer", "text": "A person-centered program is built around an individual's strengths, goals, and rights first, and their diagnosis second. A deficit-based program starts from what someone can't do and builds services to manage that, which tends to produce compliance rather than real inclusion." } },
+    { "@type": "Question", "name": "Can a program be well-intentioned and still not be very inclusive?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Most of the signs in this article show up in programs run by caring, well-meaning staff. Inclusion problems are usually structural, built into intake forms, metrics, and habits, rather than a matter of bad intent." } },
+    { "@type": "Question", "name": "How do I start making my organization's programs more person-centered?", "acceptedAnswer": { "@type": "Answer", "text": "Start small: change one intake question to ask about goals before diagnosis, or add one outcome measure that reflects what the person actually wanted. A disability consultant can help you audit current programs and prioritize the highest-impact, lowest-cost changes first." } }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a class='logo' href='/'><span class="mark"></span> Disability Intersection</a>
+    <div class="nav-links" role="navigation" aria-label="Primary">
+      <a href='/#services'>Services</a>
+      <a href='/#about'>About Lara</a>
+      <a href='/#faq'>FAQ</a>
+      <a href='/blog'>Blog</a>
+      <a class='btn coral' href='/lets-talk?topic=Program%20Development%20%26%20Support'>Let's talk</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap crumbs reveal">
+  <a href='/'>Home</a><span>/</span><a href='/blog'>Blog</a><span>/</span>5 Signs Your Program Isn't as Inclusive as You Think
+</div>
+
+<header class="art-head">
+  <div class="wrap reveal">
+    <span class="eyebrow">Organizations · Inclusion</span>
+    <h1>5 Signs Your Program Isn't as Inclusive as You Think</h1>
+    <div class="byline">
+      <span><b>Lara Minges</b></span>
+      <span class="dot-sep">·</span>
+      <span>September 13, 2026</span>
+      <span class="dot-sep">·</span>
+      <span>6 min read</span>
+    </div>
+    <div class="art-tags">
+      <a href='/blog?tag=Program%20Development'>Program Development</a>
+      <a href='/blog?tag=Inclusion'>Inclusion</a>
+      <a href='/blog?tag=Nonprofits'>Nonprofits</a>
+      <a href='/blog?tag=Person-Centered%20Care'>Person-Centered Care</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section style="padding:26px 0 0">
+  <div class="wrap reveal">
+    <div class="featured-image">
+      <div class="fi-ph">
+        <span class="fi-tag">Organizations</span>
+        <span class="fi-ico">🧩</span>
+        <span class="fi-cap">Featured image placeholder — swap for real photography</span>
+      </div>
+    </div>
+    <div class="share-bar" style="margin-top:18px">
+      <span class="share-label">Share</span>
+      <a class="share-btn" target="_blank" rel="noopener" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdisabilityintersection.org%2Fblog%2F5-signs-inclusive-program"><span class="sico">in</span> LinkedIn</a>
+      <a class="share-btn" target="_blank" rel="noopener" href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fdisabilityintersection.org%2Fblog%2F5-signs-inclusive-program&amp;text=5%20Signs%20Your%20Program%20Isn't%20as%20Inclusive%20as%20You%20Think"><span class="sico">𝕏</span> Share</a>
+      <a class="share-btn" target="_blank" rel="noopener" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdisabilityintersection.org%2Fblog%2F5-signs-inclusive-program"><span class="sico">f</span> Facebook</a>
+    </div>
+  </div>
+</section>
+
+<section style="padding:24px 0 90px">
+  <div class="wrap article-grid reveal">
+    <div class="prose">
+    <div class="quick">
+      <span class="kicker">Quick answer</span>
+      <p>A program can look inclusive on paper and still be built around managing a diagnosis instead of supporting a person. The fastest way to tell the difference: look at your intake forms, your success metrics, and what changes when someone actually complains. If those are still built around deficits and compliance, the fixes below are usually cheap and don't require a bigger budget, just a different starting question.</p>
+    </div>
+    <p>Most disability organizations don't set out to be deficit-based. Somewhere between the intake form, the funding requirements, and the day-to-day pace of the work, programs start being built around what's easiest to document rather than what actually matters to the person in front of you.</p>
+    <p>After more than a decade helping organizations move toward a <span class="hl-teal">person-centered, rights-based model</span>, these are the five signs I see most often, and the small, doable shift that tends to fix each one.</p>
+
+    <h2 id="sign-1"><span class="num">1.</span>Your intake forms ask about diagnosis before they ask about goals</h2>
+    <p>If the first three questions on your intake paperwork are about diagnosis, functioning level, or what someone "can't" do, you've already told that person what your program thinks is most important about them, before you've asked a single thing about what they actually want.</p>
+    <div class="fix"><b>The fix:</b> Move one or two goal-oriented questions ("What does a good day look like for you?" or "What do you want more of in your life right now?") to the top of the form, ahead of the diagnostic and eligibility questions.</div>
+
+    <h2 id="sign-2"><span class="num">2.</span>Success is measured by compliance, not outcomes for the actual person</h2>
+    <p>If your program's dashboards track attendance, incident reports, and hours of service delivered, but nothing about whether the person is closer to what they said they wanted, you're measuring the program's convenience, not its impact.</p>
+    <div class="fix"><b>The fix:</b> Add just <span class="hl-coral">one</span> outcome measure tied to a person's own stated goal, even something as simple as "did this person report feeling closer to their goal this quarter." One good measure beats ten easy ones.</div>
+
+    <h2 id="sign-3"><span class="num">3.</span>"Accommodation" is the finish line, not the starting point</h2>
+    <p>Meeting the legal minimum, a ramp, a large-print form, an extra ten minutes, is necessary, but it's not the same as designing the program around the person from the beginning. When accommodation is treated as the finish line, it usually means the program was designed for someone else first.</p>
+    <div class="fix"><b>The fix:</b> Before your next program redesign, ask a member of the disability community you serve to review the plan <span class="hl-teal">before</span> it's finalized, not after it's already built and you're retrofitting access in.</div>
+
+    <h2 id="sign-4"><span class="num">4.</span>Staff can recite policy but can't tell you what an individual actually wants</h2>
+    <p>Ask a frontline staff member to describe a specific person's goals, in the person's own words, and if they hesitate or default to describing the person's diagnosis instead, that's a training gap and a culture gap, not a paperwork gap.</p>
+    <div class="fix"><b>The fix:</b> Build "what does this person want, in their words" into your regular case reviews and staff check-ins, not just your written care plans that get filed away and rarely reopened.</div>
+
+    <h2 id="sign-5"><span class="num">5.</span>Feedback from the people you serve doesn't change anything</h2>
+    <p>Satisfaction surveys and suggestion boxes are common. Programs that actually change something in response to what they hear are rarer. If you can't point to one concrete change your program made in the last year because of participant or family feedback, the feedback loop isn't really open.</p>
+    <div class="fix"><b>The fix:</b> Pick one piece of recent feedback you've already received and close the loop publicly, tell the people you serve what changed and why, even if the change is small.</div>
+
+    <h2 id="takeaway">None of this requires a bigger budget</h2>
+    <p>Every fix above is a shift in what you ask, measure, and prioritize, not a new line item. That's the heart of person-centered program development: building around the individual first is usually <span class="hl-teal">more</span> cost-effective over time, not less, because programs that fit the person tend to need less correcting later.</p>
+    <p>If you recognized your organization in more than one of these signs, that's normal, and it's also a good place to start. A focused audit of your current intake, metrics, and feedback loops is often enough to find the highest-impact, lowest-cost place to begin.</p>
+    </div>
+    <aside class="side-rail" aria-label="Article progress and contact">
+      <div class="toc-card">
+        <span class="toc-label">In this article</span>
+        <nav class="toc-list" aria-label="Jump to a section">
+          <a href="#sign-1" data-target="sign-1"><span class="tnum">1</span>Intake forms ask about diagnosis before goals</a>
+          <a href="#sign-2" data-target="sign-2"><span class="tnum">2</span>Success is measured by compliance</a>
+          <a href="#sign-3" data-target="sign-3"><span class="tnum">3</span>"Accommodation" is the finish line</a>
+          <a href="#sign-4" data-target="sign-4"><span class="tnum">4</span>Staff can't say what someone wants</a>
+          <a href="#sign-5" data-target="sign-5"><span class="tnum">5</span>Feedback doesn't change anything</a>
+          <a href="#takeaway" data-target="takeaway"><span class="tnum">✓</span>None of this requires a bigger budget</a>
+        </nav>
+      </div>
+      <a class='rail-cta' href='/lets-talk?topic=Program%20Development%20%26%20Support'>
+        <h4>Let's talk about this</h4>
+        <p>Book a free 20-minute call and let's find the highest-impact place for your organization to start.</p>
+        <span class="pill">Schedule a call →</span>
+      </a>
+    </aside>
+  </div>
+</section>
+
+<section>
+  <div class="wrap prose reveal">
+    <div class="author-card">
+      <div class="av">LM</div>
+      <div>
+        <b>Lara Minges</b>
+        <p>Lara is a disability consultant, functional nutritionist, and coach with 12+ years at the intersection of disability, early childhood, and family life. She's helped 80+ organizations move from deficit-based to person-centered, rights-focused programs. <a href='/#about' style='color:var(--teal);font-weight:600'>More about Lara →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="background:var(--sand);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap center reveal">
+    <span class="kicker">Good questions</span>
+    <h2 class="sec-h">Frequently asked</h2>
+    <p class="sec-sub">Quick, clear answers about person-centered program development.</p>
+  </div>
+  <div class="wrap faq reveal">
+    <details open>
+      <summary>What does it mean for a disability program to be "person-centered" instead of "deficit-based"?</summary>
+      <p>A person-centered program is built around an individual's strengths, goals, and rights first, and their diagnosis second. A deficit-based program starts from what someone can't do and builds services to manage that, which tends to produce compliance rather than real inclusion.</p>
+    </details>
+    <details>
+      <summary>Can a program be well-intentioned and still not be very inclusive?</summary>
+      <p>Yes. Most of the signs in this article show up in programs run by caring, well-meaning staff. Inclusion problems are usually structural, built into intake forms, metrics, and habits, rather than a matter of bad intent.</p>
+    </details>
+    <details>
+      <summary>How do I start making my organization's programs more person-centered?</summary>
+      <p>Start small: change one intake question to ask about goals before diagnosis, or add one outcome measure that reflects what the person actually wanted. A disability consultant can help you audit current programs and prioritize the highest-impact, lowest-cost changes first.</p>
+    </details>
+  </div>
+</section>
+
+<section>
+  <div class="wrap center reveal">
+    <span class="kicker">Keep reading</span>
+    <h2 class="sec-h">More from the blog and site</h2>
+    <div class="other">
+      <a href='/blog'>All blog posts</a>
+      <a href='/program-development'>Program Development &amp; Growth Support</a>
+      <a href='/family-support'>Family Support</a>
+      <a href='/blog?category=Organizations'>More posts for Organizations</a>
+    </div>
+  </div>
+</section>
+
+<section class="cta" id="contact">
+  <div class="wrap reveal">
+    <h2>Ready to make your program <em>more inclusive?</em></h2>
+    <p>Book a free 20-minute call and let's find the highest-impact place to start.</p>
+    <a class='btn' href='/lets-talk?topic=Program%20Development%20%26%20Support' style='font-size:17px;padding:15px 30px'>Book a free call</a>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class='logo' href='/' style='color:#fff;margin-bottom:13px'><span class="mark"></span> Disability Intersection</a>
+        <p style="color:rgba(255,251,244,.72);max-width:320px;font-size:15px">Consulting, coaching, and early-childhood support at every intersection of disability and life.</p>
+      </div>
+      <div>
+        <h5>Services</h5>
+        <a href='/program-development'>Program Dev &amp; Growth</a>
+        <a href='/functional-nutrition'>Functional Nutrition</a>
+        <a href='/family-support'>Family Support</a>
+      </div>
+      <div>
+        <h5>More</h5>
+        <a href='/musikgarten'>Musikgarten</a>
+        <a href='/body-image-coaching'>Body Image Coaching</a>
+        <a href='/blog'>Blog</a>
+        <a href='/#faq'>FAQ</a>
+      </div>
+      <div>
+        <h5>Connect</h5>
+        <a href='/lets-talk'>Book a call</a>
+        <a href="#">Instagram</a>
+        <a href="#">Newsletter</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Disability Intersection</span>
+      <span>Accessibility-first · Built with care · <a href='/terms'>Terms of Service</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // ---- "In this article" TOC: highlights the section you're currently reading ----
+  (function () {
+    const links = [...document.querySelectorAll('.toc-list a')];
+    if (!links.length) return;
+    const sections = links.map(a => document.getElementById(a.dataset.target)).filter(Boolean);
+    if (!sections.length) return;
+
+    function update() {
+      const readLine = window.scrollY + window.innerHeight * 0.35;
+      let activeIndex = 0;
+      sections.forEach((sec, i) => { if (readLine >= sec.offsetTop) activeIndex = i; });
+      links.forEach((link, i) => {
+        const isActive = i === activeIndex;
+        link.classList.toggle('active', isActive);
+        link.setAttribute('aria-current', isActive ? 'true' : 'false');
+      });
+    }
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    update();
+  })();
+</script>
+<script src="../a11y-widget.js" defer></script>
+</body>
+</html>
