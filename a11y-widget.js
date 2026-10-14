@@ -83,7 +83,7 @@
     '.a11y-switch.on .knob{left:20px}',
     '#a11y-reset{width:100%;text-align:center;margin-top:4px;padding:9px;border-radius:10px;border:1px solid rgba(0,0,0,.18);background:#F7F5F0;font-weight:700;font-size:12.5px;cursor:pointer;color:#2E2A3F;font-family:Inter,sans-serif}',
     '#a11y-reset:hover{border-color:#F2785C;color:#F2785C}',
-    '@media(max-width:480px){#a11y-toggle,#a11y-panel{left:14px}#a11y-panel{bottom:78px}}'
+    '@media(max-width:480px){#a11y-toggle{left:12px;bottom:12px;width:44px;height:44px;font-size:13px}#a11y-panel{left:12px;bottom:64px}}'
   ].join('\n');
   document.head.appendChild(style);
 
