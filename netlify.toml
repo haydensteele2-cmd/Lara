@@ -1,0 +1,65 @@
+# Redirects from the previous WordPress site (disabilityintersection.org).
+# Pages
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/98-2"
+  to = "/"
+  status = 301
+[[redirects]]
+  from = "/about"
+  to = "/#about"
+  status = 301
+[[redirects]]
+  from = "/services"
+  to = "/#services"
+  status = 301
+[[redirects]]
+  from = "/disclaimer"
+  to = "/terms"
+  status = 301
+[[redirects]]
+  from = "/contact-form"
+  to = "/lets-talk"
+  status = 301
+[[redirects]]
+  from = "/feed"
+  to = "/blog"
+  status = 301
+[[redirects]]
+  from = "/category/*"
+  to = "/blog"
+  status = 301
+[[redirects]]
+  from = "/tag/*"
+  to = "/blog"
+  status = 301
+[[redirects]]
+  from = "/author/*"
+  to = "/#about"
+  status = 301
+
+# Old dated blog posts (/YYYY/MM/DD/slug/) go to the blog index until each is migrated.
+# Add a more specific rule above these for any post that gets a new page.
+[[redirects]]
+  from = "/2020/*"
+  to = "/blog"
+  status = 301
+[[redirects]]
+  from = "/2022/*"
+  to = "/blog"
+  status = 301
+[[redirects]]
+  from = "/2023/*"
+  to = "/blog"
+  status = 301
+[[redirects]]
+  from = "/2024/*"
+  to = "/blog"
+  status = 301
+[[redirects]]
+  from = "/2025/*"
+  to = "/blog"
+  status = 301

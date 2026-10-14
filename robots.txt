@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://disabilityintersection.org/sitemap.xml
