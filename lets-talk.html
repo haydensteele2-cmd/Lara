@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Let's Talk | Book a Free Call | Disability Intersection</title>
-<meta name="description" content="Tell us what you'd like to talk about — program development, family support, Musikgarten, coaching, or something else — and book a free call with Lara.">
+<title>Let's Talk | Request a Free Call | Disability Intersection</title>
+<meta name="description" content="Tell us what you'd like to talk about — program development, family support, Musikgarten, coaching, or something else — and request a free call with Lara.">
 <link rel="canonical" href="https://disabilityintersection.org/lets-talk">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Let's Talk | Book a Free Call | Disability Intersection">
-<meta property="og:description" content="Tell us what you'd like to talk about and book a free call with Lara.">
+<meta property="og:title" content="Let's Talk | Request a Free Call | Disability Intersection">
+<meta property="og:description" content="Tell us what you'd like to talk about and request a free call with Lara.">
 <meta property="og:url" content="https://disabilityintersection.org/lets-talk">
 <meta property="og:image" content="https://quiet-syrniki-d66ade.netlify.app/images/social-share.jpg">
 <meta property="og:image:width" content="1200">
@@ -214,73 +214,42 @@
   <div class="wrap reveal">
     <span class="eyebrow">Get in touch</span>
     <h1>What would you like to talk about?</h1>
-    <p class="lead">Tell us a bit about what brought you here, then grab a time that works for you. No pressure, no sales pitch, just a real conversation.</p>
+    <p class="lead">Tell us a bit about what brought you here and Lara will follow up to find a time that works. No pressure, no sales pitch, just a real conversation.</p>
   </div>
 </header>
 
 <main>
 <section style="padding-top:10px">
   <div class="wrap talk-wrap reveal">
-    <span class="preview-badge"><span class="dot"></span> Preview — live scheduling launching soon</span>
-
     <div class="cal-card">
       <div class="cal-host">
         <div class="av">LM</div>
         <div>
-          <h3>Free 20-Minute Consult with Lara Minges</h3>
+          <h3>Request a free 20-minute consult with Lara</h3>
           <div class="meta">
             <span>⏱ 20 min</span>
-            <span>📍 Google Meet</span>
+            <span>📍 Video call</span>
             <span>🌐 Pacific Time (US &amp; Canada)</span>
           </div>
         </div>
       </div>
 
-      <div class="cal-body">
-        <div class="cal-cal">
-          <div class="cal-nav">
-            <b>September 2026</b>
-            <div class="arrows">
-              <button type="button" aria-label="Previous month" disabled>‹</button>
-              <button type="button" aria-label="Next month" disabled>›</button>
-            </div>
-          </div>
-          <div class="cal-grid" id="cal-grid" role="group" aria-label="Choose a date">
-            <div class="dow">S</div><div class="dow">M</div><div class="dow">T</div><div class="dow">W</div><div class="dow">T</div><div class="dow">F</div><div class="dow">S</div>
-            <div class="day empty"></div><div class="day empty"></div>
-            <div class="day past">1</div><div class="day past">2</div><div class="day past">3</div><div class="day past">4</div><div class="day past">5</div>
-            <div class="day past">6</div><div class="day past">7</div><div class="day past">8</div><div class="day past">9</div><div class="day past">10</div><div class="day past">11</div><div class="day past">12</div>
-            <div class="day past">13</div><div class="day avail">14</div><div class="day avail">15</div><div class="day avail">16</div><div class="day avail selected">17</div><div class="day avail">18</div><div class="day past">19</div>
-            <div class="day past">20</div><div class="day avail">21</div><div class="day avail">22</div><div class="day avail">23</div><div class="day avail">24</div><div class="day avail">25</div><div class="day past">26</div>
-            <div class="day past">27</div><div class="day avail">28</div><div class="day avail">29</div><div class="day avail">30</div><div class="day empty"></div><div class="day empty"></div><div class="day empty"></div>
-          </div>
-          <div class="cal-tz">🌐 Times shown in Pacific Time (US &amp; Canada)</div>
-        </div>
-        <div class="cal-slots">
-          <div class="lbl">THURSDAY, SEPTEMBER 17</div>
-          <div class="slot-list" id="slot-list" role="group" aria-label="Choose a time">
-            <button type="button" class="slot">9:00am</button>
-            <button type="button" class="slot selected">10:30am</button>
-            <button type="button" class="slot">1:00pm</button>
-            <button type="button" class="slot">3:30pm</button>
-          </div>
-        </div>
-      </div>
-
-      <form class="cal-form" onsubmit="return false">
+      <form class="cal-form" name="contact" method="POST" action="/lets-talk-thanks" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact">
+        <p style="display:none"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
         <div class="row2">
           <div class="field">
             <label for="name">Your name</label>
-            <input type="text" id="name" name="name" placeholder="Jamie Rivera" autocomplete="name">
+            <input type="text" id="name" name="name" placeholder="Jamie Rivera" autocomplete="name" required>
           </div>
           <div class="field">
             <label for="email">Email</label>
-            <input type="email" id="email" name="email" placeholder="jamie@example.com" autocomplete="email">
+            <input type="email" id="email" name="email" placeholder="jamie@example.com" autocomplete="email" required>
           </div>
         </div>
         <div class="field">
           <label for="topic-select">What would you like to talk about?</label>
-          <select id="topic-select" name="topic">
+          <select id="topic-select" name="topic" required>
             <option value="">Choose a topic…</option>
             <option value="Program Development & Support">Program Development &amp; Support</option>
             <option value="Public Speaking">Public Speaking</option>
@@ -297,11 +266,16 @@
           <textarea id="description" name="description" placeholder="Share anything that will help Lara make the most of your time together."></textarea>
           <div class="hint">This isn't required, but it helps make the call useful right away.</div>
         </div>
-        <button type="submit" class="confirm-btn">Confirm booking — Thu, Sep 17 at 10:30am →</button>
+        <div class="field">
+          <label for="times">When are you generally free?</label>
+          <input type="text" id="times" name="times" placeholder="e.g. weekday mornings, Pacific Time">
+          <div class="hint">Optional. Lara will follow up by email to confirm a time.</div>
+        </div>
+        <button type="submit" class="confirm-btn">Send my request →</button>
       </form>
     </div>
 
-    <p class="talk-fallback">Prefer to just send a note instead of picking a time? Email Lara directly at <a href="mailto:hello@disabilityintersection.org">hello@disabilityintersection.org</a>.</p>
+    <p class="talk-fallback">Prefer email? Write to Lara directly at <a href="mailto:hello@disabilityintersection.org">hello@disabilityintersection.org</a>.</p>
   </div>
 </section>
 
@@ -312,7 +286,7 @@
   </div>
   <div class="wrap">
     <div class="steps">
-      <div class="step reveal"><div class="n">1</div><h4>You book a time</h4><p>Pick whatever slot works for your schedule, no back-and-forth emails needed.</p></div>
+      <div class="step reveal"><div class="n">1</div><h4>You send a note</h4><p>Share what brought you here and when you're generally free. It takes about a minute.</p></div>
       <div class="step reveal"><div class="n">2</div><h4>Lara comes prepared</h4><p>Whatever you shared above, she'll have read it before you even get on the call.</p></div>
       <div class="step reveal"><div class="n">3</div><h4>You leave with next steps</h4><p>No pressure, no sales pitch, just a clear, honest sense of whether and how to work together.</p></div>
     </div>
@@ -367,20 +341,6 @@
     if (opt) sel.value = topic;
   }
 
-  // Mock calendar interactivity — visual only, this page is a preview until a real
-  // Cal.com embed replaces it (see the "Preview" badge above the card).
-  document.querySelectorAll('.day.avail').forEach(day => {
-    day.addEventListener('click', () => {
-      document.querySelectorAll('.day.avail').forEach(d => d.classList.remove('selected'));
-      day.classList.add('selected');
-    });
-  });
-  document.querySelectorAll('.slot').forEach(slot => {
-    slot.addEventListener('click', () => {
-      document.querySelectorAll('.slot').forEach(s => s.classList.remove('selected'));
-      slot.classList.add('selected');
-    });
-  });
 </script>
 <script src="a11y-widget.js" defer></script>
 </body>
