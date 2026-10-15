@@ -263,7 +263,6 @@
       </div>
       <div>
         <h5>More</h5>
-        <a href='/musikgarten'>Musikgarten</a>
         <a href='/body-image-coaching'>Body Image Coaching</a>
         <a href='/blog'>Blog</a>
         <a href='/#faq'>FAQ</a>
@@ -373,7 +372,7 @@
     resultCount.textContent = `${visible.length} post${visible.length === 1 ? '' : 's'} found`;
   }
 
-  // Allow deep-linking into a filtered view, e.g. blog.html?tag=Musikgarten
+  // Allow deep-linking into a filtered view, e.g. blog.html?tag=Inclusion
   // or blog.html?category=Coaching — used by "Filed under" links on posts.
   const params = new URLSearchParams(location.search);
   const initialCat = params.get('category');

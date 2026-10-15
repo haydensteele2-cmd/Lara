@@ -1,6 +1,6 @@
 # Disability Intersection
 
-> Person-centered disability consulting, functional nutrition, family support, Musikgarten early childhood music classes, and body image coaching, led by Lara Minges.
+> Person-centered disability consulting, functional nutrition, family support, and body image coaching, led by Lara Minges.
 
 Disability Intersection serves organizations, families, and individuals with a warm, rights-based, non-medical approach.
 
@@ -8,7 +8,6 @@ Disability Intersection serves organizations, families, and individuals with a w
 - [Program Development & Growth Support](https://disabilityintersection.org/program-development): consulting that helps organizations move from a deficit-based model to a person-centered, rights-based one.
 - [Functional Nutrition](https://disabilityintersection.org/functional-nutrition): non-medical, food-first support for people with disabilities and chronic illness. Focused on energy and strength, not weight loss.
 - [Family Support & Disability Consulting](https://disabilityintersection.org/family-support): guidance for families navigating regional and developmental services.
-- [Musikgarten](https://disabilityintersection.org/musikgarten): certified early childhood music classes for ages 6 months to 7 years, open to every family.
 - [Body Image Coaching](https://disabilityintersection.org/body-image-coaching): body-neutral coaching.
 
 ## About
