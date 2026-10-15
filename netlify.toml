@@ -63,3 +63,13 @@
   from = "/2025/*"
   to = "/blog"
   status = 301
+
+# Musikgarten is on hold. Temporary (302) redirect to the homepage; remove these when the page returns.
+[[redirects]]
+  from = "/musikgarten"
+  to = "/"
+  status = 302
+[[redirects]]
+  from = "/musikgarten/*"
+  to = "/"
+  status = 302

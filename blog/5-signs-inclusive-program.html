@@ -21,7 +21,7 @@
 <meta name="author" content="Lara Minges">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&display=swap" rel="stylesheet">
 <style>
   :root{
     --coral:#F2785C;
@@ -38,21 +38,21 @@
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;overflow-x:hidden}
-  h1,h2,h3,h4{font-family:'Fraunces',serif;font-weight:500;line-height:1.13;letter-spacing:-.01em}
-  .fun{font-family:'Fredoka',sans-serif}
+  body{font-family:'Atkinson Hyperlegible Next',sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;overflow-x:hidden}
+  h1,h2,h3,h4{font-family:'Source Serif 4',serif;font-weight:500;line-height:1.13;letter-spacing:-.01em}
+  .fun{font-family:'Atkinson Hyperlegible Next',sans-serif}
   a{color:inherit;text-decoration:none}
   .wrap{max-width:1120px;margin:0 auto;padding:0 28px}
 
   /* NAV */
   nav{position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:1px solid var(--line)}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;height:78px}
-  .logo{display:flex;align-items:center;gap:11px;font-family:'Fredoka';font-weight:600;font-size:21px}
+  .logo{display:flex;align-items:center;gap:11px;font-family:'Atkinson Hyperlegible Next',sans-serif;font-weight:600;font-size:21px}
   .mark{width:28px;height:28px;border-radius:50%;background:var(--teal);position:relative}
   .mark:after{content:"";position:absolute;width:28px;height:28px;border-radius:50%;background:var(--coral);left:12px;top:0;mix-blend-mode:multiply;opacity:.85}
   .nav-links{display:flex;gap:28px;align-items:center;font-size:15px;font-weight:600;color:var(--muted)}
   .nav-links a:not(.btn):hover{color:var(--ink)}
-  .btn{display:inline-block;background:var(--ink);color:#fff;font-family:'Fredoka';font-weight:500;font-size:15px;padding:11px 22px;border-radius:40px;transition:transform .18s, background .2s}
+  .btn{display:inline-block;background:var(--ink);color:#fff;font-family:'Atkinson Hyperlegible Next',sans-serif;font-weight:500;font-size:15px;padding:11px 22px;border-radius:40px;transition:transform .18s, background .2s}
   .btn:hover{transform:translateY(-2px)}
   .btn.coral{background:var(--coral)}
   .btn.coral:hover{background:#e26a4f}
@@ -87,7 +87,7 @@
   .prose{max-width:720px}
   .prose p{color:var(--ink);font-size:17.5px;margin-bottom:18px}
   .prose h2{font-size:clamp(24px,3vw,30px);font-weight:500;margin:40px 0 14px}
-  .prose h2 .num{color:var(--teal);font-family:'Fredoka';margin-right:10px}
+  .prose h2 .num{color:var(--teal);font-family:'Atkinson Hyperlegible Next',sans-serif;margin-right:10px}
   .prose .fix{background:#fff;border-left:4px solid var(--teal);border-radius:0 16px 16px 0;padding:16px 20px;margin:0 0 22px;font-size:16px;color:var(--muted)}
   .prose .fix b{color:var(--ink)}
   .hl-teal,.hl-coral{font-weight:700;padding:.04em .32em;border-radius:6px}
@@ -101,16 +101,16 @@
 
   /* AUTHOR CARD */
   .author-card{max-width:720px;display:flex;gap:18px;align-items:flex-start;background:var(--sand);border:1px solid var(--line);border-radius:22px;padding:24px 26px;margin-top:20px}
-  .author-card .av{width:52px;height:52px;border-radius:50%;background:linear-gradient(160deg,var(--sky),var(--sage));flex:none;display:flex;align-items:center;justify-content:center;font-family:'Fredoka';font-weight:600;font-size:17px;color:#fff}
+  .author-card .av{width:52px;height:52px;border-radius:50%;background:linear-gradient(160deg,var(--sky),var(--sage));flex:none;display:flex;align-items:center;justify-content:center;font-family:'Atkinson Hyperlegible Next',sans-serif;font-weight:600;font-size:17px;color:#fff}
   .author-card p{color:var(--muted);font-size:15px;margin:4px 0 0}
-  .author-card b{font-family:'Fraunces';font-size:18px}
+  .author-card b{font-family:'Source Serif 4',serif;font-size:18px}
 
   /* FAQ */
   .faq{max-width:780px;margin:44px auto 0}
   .faq details{border:1px solid var(--line);border-radius:16px;background:#fff;padding:4px 22px;margin-bottom:14px}
-  .faq summary{list-style:none;cursor:pointer;font-family:'Fraunces';font-size:19px;font-weight:500;padding:18px 0;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .faq summary{list-style:none;cursor:pointer;font-family:'Source Serif 4',serif;font-size:19px;font-weight:500;padding:18px 0;display:flex;justify-content:space-between;align-items:center;gap:16px}
   .faq summary::-webkit-details-marker{display:none}
-  .faq summary:after{content:"+";font-family:'Fredoka';font-size:24px;color:var(--teal)}
+  .faq summary:after{content:"+";font-family:'Atkinson Hyperlegible Next',sans-serif;font-size:24px;color:var(--teal)}
   .faq details[open] summary:after{content:"-"}
   .faq details p{color:var(--muted);font-size:16px;padding:0 0 18px}
   .sec-h{font-size:clamp(28px,3.6vw,38px);font-weight:400;margin:10px 0 14px}
@@ -132,7 +132,7 @@
   /* FOOTER */
   footer{background:var(--ink);color:var(--paper);padding:58px 0 28px}
   .foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px}
-  footer h5{font-family:'Fredoka';font-size:17px;font-weight:500;margin-bottom:13px;color:var(--sun)}
+  footer h5{font-family:'Atkinson Hyperlegible Next',sans-serif;font-size:17px;font-weight:500;margin-bottom:13px;color:var(--sun)}
   footer a{display:block;padding:5px 0;color:rgba(255,251,244,.78);font-size:15px}
   footer a:hover{color:var(--sun)}
   .foot-bottom{margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,.14);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:14px;color:rgba(255,251,244,.6)}
@@ -152,10 +152,10 @@
   .side-rail{position:sticky;top:110px;display:flex;flex-direction:column;gap:20px}
 
   .toc-card{background:var(--sand);border:1px solid var(--line);border-radius:22px;padding:26px 24px}
-  .toc-label{display:block;font-family:'Fredoka';font-size:12.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+  .toc-label{display:block;font-family:'Atkinson Hyperlegible Next',sans-serif;font-size:12.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
   .toc-list{display:flex;flex-direction:column;gap:2px}
   .toc-list a{display:flex;gap:12px;align-items:flex-start;padding:9px 10px 9px 12px;margin:0 -10px;border-radius:10px;border-left:3px solid transparent;font-size:14.5px;line-height:1.35;color:var(--muted);font-weight:500;transition:border-color .15s,color .15s}
-  .toc-list a .tnum{font-family:'Fredoka';font-weight:700;color:var(--sage);flex:none;width:16px}
+  .toc-list a .tnum{font-family:'Atkinson Hyperlegible Next',sans-serif;font-weight:700;color:var(--sage);flex:none;width:16px}
   .toc-list a:hover{color:var(--ink)}
   .toc-list a.active{border-left-color:var(--teal);color:var(--ink);font-weight:700}
   .toc-list a.active .tnum{color:var(--teal)}
@@ -164,7 +164,7 @@
   .rail-cta:hover{transform:translateY(-2px)}
   .rail-cta h4{color:#fff;font-size:19px;font-weight:500;margin-bottom:8px}
   .rail-cta p{color:rgba(255,251,244,.72);font-size:14px;line-height:1.5;margin-bottom:18px}
-  .rail-cta .pill{display:block;text-align:center;background:var(--sun);color:var(--ink);font-family:'Fredoka';font-weight:600;font-size:14.5px;padding:13px 16px;border-radius:40px;transition:background .18s}
+  .rail-cta .pill{display:block;text-align:center;background:var(--sun);color:var(--ink);font-family:'Atkinson Hyperlegible Next',sans-serif;font-weight:600;font-size:14.5px;padding:13px 16px;border-radius:40px;transition:background .18s}
   .rail-cta:hover .pill{background:#e6a73f}
 
   @media(max-width:980px){.article-grid{grid-template-columns:1fr}.side-rail{display:none}}
@@ -172,10 +172,10 @@
   /* SHARE BAR */
   .share-bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px}
   .share-bar.bordered{padding:26px 0;border-top:1px solid var(--line);margin-top:8px}
-  .share-label{font-family:'Fredoka';font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-right:4px}
-  .share-btn{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid var(--line);border-radius:40px;padding:10px 18px;font-family:'Fredoka';font-weight:600;font-size:14.5px;color:var(--ink);transition:border-color .18s,color .18s}
+  .share-label{font-family:'Atkinson Hyperlegible Next',sans-serif;font-size:12.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-right:4px}
+  .share-btn{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid var(--line);border-radius:40px;padding:10px 18px;font-family:'Atkinson Hyperlegible Next',sans-serif;font-weight:600;font-size:14.5px;color:var(--ink);transition:border-color .18s,color .18s}
   .share-btn:hover{border-color:var(--teal);color:var(--teal)}
-  .share-btn .sico{font-family:'Fredoka';font-weight:700}
+  .share-btn .sico{font-family:'Atkinson Hyperlegible Next',sans-serif;font-weight:700}
 
   /* FEATURED IMAGE */
   .featured-image{aspect-ratio:3/1;border-radius:22px;overflow:hidden;border:1px solid var(--line);position:relative;margin-bottom:0}
@@ -419,7 +419,6 @@
       </div>
       <div>
         <h5>More</h5>
-        <a href='/musikgarten'>Musikgarten</a>
         <a href='/body-image-coaching'>Body Image Coaching</a>
         <a href='/blog'>Blog</a>
         <a href='/#faq'>FAQ</a>

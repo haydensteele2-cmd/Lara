@@ -68,11 +68,11 @@
     /* compensate so real photos/placeholders don't render inverted under dark mode */
     'html.a11y-dark img,html.a11y-dark video,html.a11y-dark .fi-ph,html.a11y-dark .hero-media img,html.a11y-dark .cal-host .av,html.a11y-dark .photo img,html.a11y-dark .blob img,html.a11y-dark .author-card .av{filter:invert(1) hue-rotate(180deg)}',
     /* widget UI itself, kept out of the way and legible in every mode */
-    '#a11y-toggle{position:fixed;bottom:22px;left:22px;z-index:999;width:52px;height:52px;border-radius:50%;background:#2E2A3F;color:#fff;border:none;cursor:pointer;font-family:Fredoka,sans-serif;font-weight:700;font-size:15px;box-shadow:0 10px 26px rgba(0,0,0,.24);filter:none !important}',
+    '#a11y-toggle{position:fixed;bottom:22px;left:22px;z-index:999;width:52px;height:52px;border-radius:50%;background:#2E2A3F;color:#fff;border:none;cursor:pointer;font-family:Atkinson Hyperlegible Next,sans-serif;font-weight:700;font-size:15px;box-shadow:0 10px 26px rgba(0,0,0,.24);filter:none !important}',
     '#a11y-toggle:hover{transform:translateY(-2px)}',
-    '#a11y-panel{position:fixed;bottom:84px;left:22px;z-index:999;width:296px;max-width:calc(100vw - 44px);background:#fff;border:1px solid rgba(0,0,0,.14);border-radius:18px;box-shadow:0 20px 50px rgba(0,0,0,.2);padding:18px;display:none;font-family:Inter,sans-serif;color:#2E2A3F;filter:none !important}',
+    '#a11y-panel{position:fixed;bottom:84px;left:22px;z-index:999;width:296px;max-width:calc(100vw - 44px);background:#fff;border:1px solid rgba(0,0,0,.14);border-radius:18px;box-shadow:0 20px 50px rgba(0,0,0,.2);padding:18px;display:none;font-family:Atkinson Hyperlegible Next,sans-serif;color:#2E2A3F;filter:none !important}',
     '#a11y-panel.open{display:block}',
-    '#a11y-panel h4{font-family:Fredoka,sans-serif;font-size:15px;font-weight:600;margin:0 0 14px}',
+    '#a11y-panel h4{font-family:Atkinson Hyperlegible Next,sans-serif;font-size:15px;font-weight:600;margin:0 0 14px}',
     '.a11y-row{display:flex;align-items:center;justify-content:space-between;margin-bottom:13px;font-size:13.5px;font-weight:600;gap:10px}',
     '.a11y-row .a11y-btns{display:flex;gap:6px;align-items:center}',
     '.a11y-row button.a11y-step{width:28px;height:28px;border-radius:8px;border:1px solid rgba(0,0,0,.18);background:#fff;cursor:pointer;font-weight:700;font-size:13px;line-height:1;color:#2E2A3F}',
@@ -81,7 +81,7 @@
     '.a11y-switch.on{background:#3BAFA3}',
     '.a11y-switch .knob{position:absolute;top:2px;left:2px;width:18px;height:18px;border-radius:50%;background:#fff;transition:left .15s}',
     '.a11y-switch.on .knob{left:20px}',
-    '#a11y-reset{width:100%;text-align:center;margin-top:4px;padding:9px;border-radius:10px;border:1px solid rgba(0,0,0,.18);background:#F7F5F0;font-weight:700;font-size:12.5px;cursor:pointer;color:#2E2A3F;font-family:Inter,sans-serif}',
+    '#a11y-reset{width:100%;text-align:center;margin-top:4px;padding:9px;border-radius:10px;border:1px solid rgba(0,0,0,.18);background:#F7F5F0;font-weight:700;font-size:12.5px;cursor:pointer;color:#2E2A3F;font-family:Atkinson Hyperlegible Next,sans-serif}',
     '#a11y-reset:hover{border-color:#F2785C;color:#F2785C}',
     '@media(max-width:480px){#a11y-toggle{left:12px;bottom:12px;width:44px;height:44px;font-size:13px}#a11y-panel{left:12px;bottom:64px}}'
   ].join('\n');

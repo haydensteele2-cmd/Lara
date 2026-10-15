@@ -41,18 +41,6 @@ const BLOG_POSTS = [
     comingSoon: false
   },
   {
-    slug: "why-music-reaches-kids",
-    title: "Why Music Reaches Kids When Words Can't",
-    excerpt: "What happens in a child's brain when we sing together.",
-    category: "Early Childhood",
-    tags: ["Musikgarten", "Child Development", "Music & Learning"],
-    date: null,
-    readTime: null,
-    icon: "🎶",
-    url: "blog/why-music-reaches-kids.html",
-    comingSoon: true
-  },
-  {
     slug: "body-image-beyond-before-and-after",
     title: "Making Peace With the Body You Actually Have",
     excerpt: "A coach's take on body image beyond the before-and-after.",
