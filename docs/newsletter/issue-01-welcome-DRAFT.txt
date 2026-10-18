@@ -1,0 +1,45 @@
+Welcome to Disability Intersection
+Welcome issue
+
+Welcome, and thank you for being here
+
+Hi {{first_name}},
+
+I'm so glad you're here. I believe support works best when it starts with each person's strengths, goals, and joy, and that belief is at the heart of Disability Intersection. [Lara: add one or two sentences about why you started this newsletter and what readers can expect each month.]
+
+Each month I'll share practical ideas for organizations, families, and anyone who wants to feel more like themselves, along with new posts, upcoming talks, and ways to connect.
+
+--- NEW ON THE BLOG ---
+5 Ways to Make Your Program More Person-Centered
+Five practical, low-cost steps for building a program around each person's strengths and goals, with a simple first step for each one. Start with your intake form and see what opens up.
+Read the full post: https://disabilityintersection.org/blog/5-ways-person-centered-program
+
+--- ONE THING TO TRY THIS MONTH ---
+Try asking one new question this week: “What matters to you?” You can use it in a meeting, an intake conversation, or at the dinner table. Notice what changes when a person's own goals lead the conversation.
+
+[Lara: optional, one sentence from your own experience with this question.]
+
+--- FROM THE BLOG ---
+5 Ways to Make Your Program More Person-Centered (https://disabilityintersection.org/blog/5-ways-person-centered-program)
+Five practical steps, each with an easy first move.
+
+[More posts will appear here as they are published and approved.]
+
+--- WHAT'S COMING UP ---
+[Lara: add a talk, webinar, or podcast with date and link, or delete this section for the first issue.]
+
+--- LET'S TALK ---
+Book a free 20-minute call to talk about what person-centered support could look like for you, your family, or your organization.
+Request a free call: https://disabilityintersection.org/lets-talk?topic=Program%20Development%20%26%20Support
+
+Thank you for being part of this community.
+Warmly,
+Lara Minges
+
+--
+You're receiving this email because you subscribed at disabilityintersection.org.
+Unsubscribe: {{unsubscribe_url}}
+View in browser: {{view_in_browser_url}}
+Privacy Policy: https://disabilityintersection.org/privacy
+Disability Intersection, [Street address or registered PO box], Sierra Madre, CA 91024
+Questions? Reply to this email or write to disabilityintersection@startmail.com.

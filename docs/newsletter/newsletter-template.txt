@@ -1,0 +1,42 @@
+[Subject line: a clear, warm promise of what's inside]
+[Month Year] newsletter
+
+[A warm, positive headline for this issue]
+
+Hi {{first_name}},
+
+[Lara: a short, personal welcome in your own voice, 2 to 4 sentences. Share what's on your mind this month, and keep it encouraging.]
+
+--- NEW ON THE BLOG ---
+[Title of your featured post]
+[Two sentences that answer the post's main question, so readers get value right here.]
+Read the full post: https://disabilityintersection.org/blog/[post-slug]
+
+--- ONE THING TO TRY THIS MONTH ---
+[One small, doable idea readers can use this month, 2 to 3 sentences. Cite a source for any fact or statistic.]
+
+--- FROM THE BLOG ---
+[Post title] (https://disabilityintersection.org/blog/[post-slug])
+[One-line description]
+
+[Post title] (https://disabilityintersection.org/blog/[post-slug])
+[One-line description]
+
+--- WHAT'S COMING UP ---
+[Optional: a talk, webinar, podcast, or new offering, with date and link. Delete this section if there is nothing to share.]
+
+--- LET'S TALK ---
+Book a free 20-minute call to explore how person-centered support can help you, your family, or your organization.
+Request a free call: https://disabilityintersection.org/lets-talk
+
+[Lara: a warm closing line, for example “Thank you for being here.”]
+Warmly,
+Lara Minges
+
+--
+You're receiving this email because you subscribed at disabilityintersection.org.
+Unsubscribe: {{unsubscribe_url}}
+View in browser: {{view_in_browser_url}}
+Privacy Policy: https://disabilityintersection.org/privacy
+Disability Intersection, [Street address or registered PO box], Sierra Madre, CA 91024
+Questions? Reply to this email or write to disabilityintersection@startmail.com.
