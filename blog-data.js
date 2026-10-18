@@ -4,7 +4,7 @@
   This is a plain JavaScript file, not a real database or CMS — there's no
   admin screen. To publish a new post:
     1. Write the post as its own HTML file inside the /blog folder
-       (copy blog/5-signs-inclusive-program.html as a starting template).
+       (copy blog/5-ways-person-centered-program.html as a starting template).
     2. Add one object to the BLOG_POSTS array below describing it.
     3. Set comingSoon to false (or delete that line) once the post's HTML
        file actually exists, so the card becomes clickable.
@@ -29,15 +29,15 @@
 
 const BLOG_POSTS = [
   {
-    slug: "5-signs-inclusive-program",
-    title: "5 Signs Your Program Isn't as Inclusive as You Think",
-    excerpt: "And the gentle, doable fixes that change everything.",
+    slug: "5-ways-person-centered-program",
+    title: "5 Ways to Make Your Program More Person-Centered",
+    excerpt: "Simple, doable steps that put each person at the center.",
     category: "Organizations",
     tags: ["Program Development", "Inclusion", "Nonprofits", "Person-Centered Care"],
     date: "2026-09-13",
     readTime: "6 min read",
     icon: "📝",
-    url: "blog/5-signs-inclusive-program.html",
+    url: "blog/5-ways-person-centered-program.html",
     comingSoon: false
   },
   {
