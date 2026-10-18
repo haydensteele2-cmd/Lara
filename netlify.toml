@@ -81,3 +81,9 @@
   to = "/404.html"
   status = 404
   force = true
+
+# The first blog post was renamed before launch.
+[[redirects]]
+  from = "/blog/5-signs-inclusive-program"
+  to = "/blog/5-ways-person-centered-program"
+  status = 301
