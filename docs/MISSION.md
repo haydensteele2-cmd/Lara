@@ -9,9 +9,9 @@ Disability Intersection helps people with disabilities, their families, and the 
 We support people with disabilities, families, and organizations at every intersection of disability and life, with honest, research-backed, person-centered guidance and a lot of heart.
 
 ## Option C (values-forward)
-Our mission is to make the world more inclusive, one joyful step at a time. We do that through person-centered consulting, coaching, and education that is grounded in research, free of fear and shame, and welcoming to everyone.
+Our mission is to make the world more inclusive, one joyful step at a time. We do that through person-centered consulting, coaching, and education that is grounded in research, built on encouragement, and welcoming to everyone.
 
 ## Notes
-- Option A names the three audiences on the site (people with disabilities, families, organizations) and the core values (person-centered, research-backed, encouraging, inclusive).
+- Option A names the three audiences on the site (people with disabilities, families, organizations) and the core values: person-centered, research-backed, encouraging, and inclusive.
 - Option C reuses the site's existing phrase "one joyful step at a time" from the homepage.
 - Once chosen, the statement can go on the About section and the About page, in Lara's social profiles, and in the page's search markup.
