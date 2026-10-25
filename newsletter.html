@@ -138,6 +138,29 @@
   .nl-faq p{color:var(--muted);margin-top:10px;font-size:15.5px}
   .nl-end{padding-bottom:80px}
   @media(max-width:820px){.nl-grid,.nl-grid.three,.nl-form .row2{grid-template-columns:1fr}.nl-form{padding:24px 18px}}
+
+  /* NEWSLETTER v2: sign-up beside the intro */
+  .nl-top{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:start;padding:30px 0 6px}
+  .nl-top h1{font-size:clamp(30px,4vw,46px);font-weight:400;margin:12px 0 14px;line-height:1.12;text-align:left}
+  .nl-top .eyebrow{display:inline-flex;align-items:center;gap:9px;font-size:13px;font-weight:600;letter-spacing:.13em;text-transform:uppercase;color:var(--teal)}
+  .nl-top .eyebrow:before{content:"";width:24px;height:2px;background:var(--coral)}
+  .nl-top .lead{color:var(--muted);font-size:18px;margin-bottom:18px;text-align:left}
+  .nl-pts{list-style:none;margin:0 0 18px}
+  .nl-pts li{padding:7px 0 7px 32px;position:relative;font-size:16.5px}
+  .nl-pts li:before{content:"";position:absolute;left:4px;top:13px;width:13px;height:13px;border-radius:50%;background:var(--teal)}
+  .nl-pts li:nth-child(even):before{background:var(--coral)}
+  .nl-top .nl-form{margin:0;max-width:none;padding:26px 26px 22px;position:sticky;top:96px}
+  .nl-top .nl-form h2{font-size:24px;margin:0 0 4px;font-weight:500}
+  .nl-top .nl-form .sub2{color:var(--muted);font-size:15px;margin-bottom:16px}
+  .nl-top .nl-form .opts{display:grid;grid-template-columns:1fr 1fr;gap:0 14px}
+  .nl-top .nl-opt{margin:4px 0;font-size:14.5px}
+  .nl-top .field{margin-bottom:12px}
+  .nl-top fieldset{margin-bottom:10px}
+  .nl-top .nl-check{font-size:13px;margin:6px 0 12px}
+  .nl-sec.tight{padding-top:40px}
+  .nl-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:20px}
+  .nl-chips span{background:#fff;border:1px solid var(--line);border-radius:30px;padding:9px 18px;font-weight:600;font-size:15px}
+  @media(max-width:900px){.nl-top{grid-template-columns:1fr;gap:22px}.nl-top .nl-form{position:static}.nl-top .nl-form .opts{grid-template-columns:1fr}.nl-pts{display:none}}
 </style>
 <script type="application/ld+json">
 {
@@ -249,20 +272,47 @@
 
 <header class="legal-head" style="display:none"></header>
 <main>
-<section class="nl-hero">
-  <div class="wrap">
+<div class="wrap nl-top">
+  <div>
     <span class="eyebrow">Join the newsletter</span>
     <h1>Ideas, resources, and encouragement, every other week.</h1>
     <p class="lead">A friendly note from Lara Minges every two weeks, with practical ideas for organizations, families, and anyone who wants to feel more like themselves.</p>
-    <a class="btn coral" href="#join">Join the newsletter</a>
+    <ul class="nl-pts">
+      <li>New blog posts, with the main idea up front</li>
+      <li>One small thing to try each issue</li>
+      <li>Free resources and guides</li>
+      <li>Easy to unsubscribe, any time</li>
+    </ul>
   </div>
-</section>
+  <form class="nl-form" id="nl-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" aria-labelledby="nl-join-h">
+    <h2 id="nl-join-h">Join the newsletter</h2>
+    <p class="sub2">Free, every two weeks, about a minute to sign up.</p>
+    <input type="hidden" name="form-name" value="newsletter">
+    <input type="hidden" name="source" value="newsletter page">
+    <p style="display:none"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
+    <div class="field"><label for="nl-name">First name</label><input type="text" id="nl-name" name="first_name" autocomplete="given-name"></div>
+    <div class="field"><label for="nl-email">Email</label><input type="email" id="nl-email" name="email" autocomplete="email" required></div>
+    <fieldset>
+      <legend>I'm most interested in (optional)</legend>
+      <div class="opts">
+        <label class="nl-opt"><input type="checkbox" name="interests" value="Program development"> Program development</label>
+        <label class="nl-opt"><input type="checkbox" name="interests" value="Body image"> Body image coaching</label>
+        <label class="nl-opt"><input type="checkbox" name="interests" value="Functional nutrition"> Functional nutrition</label>
+        <label class="nl-opt"><input type="checkbox" name="interests" value="Family support"> Family support</label>
+        <label class="nl-opt"><input type="checkbox" name="interests" value="Everything"> A little of everything</label>
+      </div>
+    </fieldset>
+    <label class="nl-check"><input type="checkbox" name="consent" value="yes" required><span>Yes, I'd like to receive the Disability Intersection newsletter every two weeks. I can unsubscribe at any time. See the <a href="/privacy">Privacy Policy</a>.</span></label>
+    <div class="nl-err" id="nl-err" role="alert"></div>
+    <button type="submit" class="nl-btn" id="nl-send">Join the newsletter</button>
+    <p id="nl-sent" style="display:none;font-weight:700;color:#1F6B64;margin-top:14px" role="status">Thank you for joining! Lara's next note is on its way.</p>
+  </form>
+</div>
 
-<section class="nl-sec" id="inside">
+<section class="nl-sec tight" id="inside">
   <div class="wrap nl-center">
     <span class="kicker">What you'll get</span>
     <h2>A warm, useful note in your inbox</h2>
-    <p class="sub">Each issue is short, practical, and written to be put to use the same week.</p>
     <div class="nl-grid">
       <div class="nl-card t1"><h3>New blog posts</h3><p>Every new post, with a short summary so you can take in the main idea in a minute.</p></div>
       <div class="nl-card t2"><h3>One small thing to try</h3><p>A simple, doable idea for your program, your day, or your plate.</p></div>
@@ -272,76 +322,21 @@
   </div>
 </section>
 
-<section class="nl-sec" id="issue">
-  <div class="wrap nl-center">
-    <span class="kicker">Inside every issue</span>
-    <h2>A quick, friendly read</h2>
-    <ul class="nl-list">
-      <li>A short note from Lara<span>Her voice, your inbox, and a little encouragement for the week.</span></li>
-      <li>The featured post<span>The main answer up front, plus a link to read more.</span></li>
-      <li>One thing to try<span>One small step you can take this week.</span></li>
-      <li>A resource of the issue<span>A helpful checklist, guide, or reading suggestion.</span></li>
-      <li>What's coming up<span>Talks, webinars, and ways to connect.</span></li>
-    </ul>
-  </div>
-</section>
-
-<section class="nl-sec" id="for-you">
+<section class="nl-sec tight" id="for-you">
   <div class="wrap nl-center">
     <span class="kicker">Made for you</span>
     <h2>Three ways to read along</h2>
-    <p class="sub">Tell us what you're most interested in when you sign up, and we'll keep the issues useful for you.</p>
     <div class="nl-grid three">
       <div class="nl-aud a1"><h3>For organizations</h3><p>Person-centered, rights-based practices for programs, teams, and boards.</p></div>
       <div class="nl-aud a2"><h3>For families</h3><p>Guidance and encouragement for supporting a child or loved one with a disability.</p></div>
       <div class="nl-aud a3"><h3>For you</h3><p>Food-first ideas and a kinder relationship with your body, for people living with disabilities or chronic illness, and for anyone who wants more energy and strength.</p></div>
     </div>
+    <div class="nl-chips" aria-label="Inside every issue"><span>A note from Lara</span><span>The featured post</span><span>One thing to try</span><span>A resource of the issue</span><span>What's coming up</span></div>
+    <div class="nl-chips" aria-label="Our promise"><span>Research-backed</span><span>Warm and honest</span><span>Every two weeks</span><span>Easy to unsubscribe</span></div>
   </div>
 </section>
 
-<section class="nl-sec" id="promise">
-  <div class="wrap nl-center">
-    <span class="kicker">Our promise</span>
-    <h2>Written with care</h2>
-    <ul class="nl-list">
-      <li>Research-backed<span>Facts come with cited sources.</span></li>
-      <li>Warm and honest<span>Encouraging, accurate, and open to everyone.</span></li>
-      <li>Every two weeks<span>A steady, friendly rhythm.</span></li>
-      <li>Easy to unsubscribe<span>Every email has an unsubscribe link.</span></li>
-    </ul>
-  </div>
-</section>
-
-<section class="nl-sec" id="join">
-  <div class="wrap nl-center">
-    <span class="kicker">Join us</span>
-    <h2>Sign up for the newsletter</h2>
-    <p class="sub">It's free, and it takes about a minute.</p>
-    <form class="nl-form" id="nl-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="newsletter">
-      <input type="hidden" name="source" value="newsletter page">
-      <p style="display:none"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
-      <div class="row2">
-        <div class="field"><label for="nl-name">First name</label><input type="text" id="nl-name" name="first_name" autocomplete="given-name"></div>
-        <div class="field"><label for="nl-email">Email</label><input type="email" id="nl-email" name="email" autocomplete="email" required></div>
-      </div>
-      <fieldset>
-        <legend>I'm most interested in (optional)</legend>
-        <label class="nl-opt"><input type="checkbox" name="interests" value="Program development"> Program development and growth support</label>
-        <label class="nl-opt"><input type="checkbox" name="interests" value="Body image"> Body image coaching</label>
-        <label class="nl-opt"><input type="checkbox" name="interests" value="Functional nutrition"> Functional nutrition</label>
-        <label class="nl-opt"><input type="checkbox" name="interests" value="Family support"> Family support</label>
-        <label class="nl-opt"><input type="checkbox" name="interests" value="Everything"> A little of everything</label>
-      </fieldset>
-      <label class="nl-check"><input type="checkbox" name="consent" value="yes" required><span>Yes, I'd like to receive the Disability Intersection newsletter every two weeks. I can unsubscribe at any time. See the <a href="/privacy">Privacy Policy</a>.</span></label>
-      <div class="nl-err" id="nl-err" role="alert"></div>
-      <button type="submit" class="nl-btn" id="nl-send">Join the newsletter</button>
-    </form>
-    <p id="nl-sent" style="display:none;font-weight:700;color:#1F6B64;margin-top:22px" role="status">Thank you for joining! Lara's next note is on its way.</p>
-  </div>
-</section>
-
-<section class="nl-sec nl-end" id="faq">
+<section class="nl-sec tight nl-end" id="faq">
   <div class="wrap nl-center">
     <span class="kicker">Good questions</span>
     <h2>Frequently asked</h2>
