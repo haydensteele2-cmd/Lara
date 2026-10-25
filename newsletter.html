@@ -158,9 +158,17 @@
   .nl-top fieldset{margin-bottom:10px}
   .nl-top .nl-check{font-size:13px;margin:6px 0 12px}
   .nl-sec.tight{padding-top:40px}
+  .nl-note{font-size:13px;color:var(--muted);text-align:center;margin-top:12px}
+  .nl-note a{text-decoration:underline}
   .nl-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:20px}
   .nl-chips span{background:#fff;border:1px solid var(--line);border-radius:30px;padding:9px 18px;font-weight:600;font-size:15px}
   @media(max-width:900px){.nl-top{grid-template-columns:1fr;gap:22px}.nl-top .nl-form{position:static}.nl-top .nl-form .opts{grid-template-columns:1fr}.nl-pts{display:none}}
+
+  /* NAV: newsletter link */
+  .nav-links a.nav-news{border:1.5px solid #1F6B64;color:#1F6B64;padding:9px 18px;border-radius:40px;font-size:14.5px;font-weight:600;white-space:nowrap;text-decoration:none;transition:background .18s,color .18s}
+  .nav-links a.nav-news:hover,.nav-links a.nav-news:focus-visible{background:#1F6B64;color:#fff}
+  @media(max-width:1060px){.nav-links{gap:16px}.nav-links a.nav-news{padding:8px 14px;font-size:14px}}
+  @media(max-width:1000px){.nav-links a:not(.btn):not(.nav-news){display:none}.logo{white-space:nowrap}.nav-links .btn{white-space:nowrap}}
 </style>
 <script type="application/ld+json">
 {
@@ -261,6 +269,7 @@
       <a href='/#about'>About Lara</a>
       <a href='/#faq'>FAQ</a>
       <a href='/blog'>Blog</a>
+      <a class='nav-news' href='/newsletter'>Join the newsletter</a>
       <a class='btn coral' href='/lets-talk'>Let's talk</a>
     </div>
   </div>
@@ -286,9 +295,10 @@
   </div>
   <form class="nl-form" id="nl-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field" aria-labelledby="nl-join-h">
     <h2 id="nl-join-h">Join the newsletter</h2>
-    <p class="sub2">Free, every two weeks, about a minute to sign up.</p>
+    <p class="sub2">A friendly note from Lara every two weeks. Free.</p>
     <input type="hidden" name="form-name" value="newsletter">
     <input type="hidden" name="source" value="newsletter page">
+    <input type="hidden" name="consent_notice" value="By signing up, you agree to receive the Disability Intersection newsletter every two weeks. You can unsubscribe at any time.">
     <p style="display:none"><label>Don't fill this out if you're human: <input name="bot-field"></label></p>
     <div class="field"><label for="nl-name">First name</label><input type="text" id="nl-name" name="first_name" autocomplete="given-name"></div>
     <div class="field"><label for="nl-email">Email</label><input type="email" id="nl-email" name="email" autocomplete="email" required></div>
@@ -302,9 +312,9 @@
         <label class="nl-opt"><input type="checkbox" name="interests" value="Everything"> A little of everything</label>
       </div>
     </fieldset>
-    <label class="nl-check"><input type="checkbox" name="consent" value="yes" required><span>Yes, I'd like to receive the Disability Intersection newsletter every two weeks. I can unsubscribe at any time. See the <a href="/privacy">Privacy Policy</a>.</span></label>
     <div class="nl-err" id="nl-err" role="alert"></div>
-    <button type="submit" class="nl-btn" id="nl-send">Join the newsletter</button>
+    <button type="submit" class="nl-btn" id="nl-send">Sign me up</button>
+    <p class="nl-note">By signing up, you agree to receive the newsletter. Unsubscribe any time. <a href="/privacy">Privacy Policy</a></p>
     <p id="nl-sent" style="display:none;font-weight:700;color:#1F6B64;margin-top:14px" role="status">Thank you for joining! Lara's next note is on its way.</p>
   </form>
 </div>
@@ -392,12 +402,12 @@
   f.addEventListener("submit",function(e){
     e.preventDefault();
     var err=document.getElementById("nl-err");
-    if(!/^\S+@\S+\.\S+$/.test(f.email.value)||!f.consent.checked){err.textContent="Please add a valid email and check the box to join.";return}
+    if(!/^\S+@\S+\.\S+$/.test(f.email.value)){err.textContent="Please add a valid email address.";return}
     err.textContent="";
-    var b=document.getElementById("nl-send"); b.disabled=true; b.textContent="Joining...";
+    var b=document.getElementById("nl-send"); b.disabled=true; b.textContent="Signing you up...";
     fetch("/",{method:"POST",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:new URLSearchParams(new FormData(f)).toString()})
       .then(function(r){if(!r.ok)throw new Error("fail");f.style.display="none";document.getElementById("nl-sent").style.display="block"})
-      .catch(function(){b.disabled=false;b.textContent="Join the newsletter";err.textContent="Sorry, that didn't go through. Please try again, or email disabilityintersection@startmail.com."});
+      .catch(function(){b.disabled=false;b.textContent="Sign me up";err.textContent="Sorry, that didn't go through. Please try again, or email disabilityintersection@startmail.com."});
   });
 })();
 </script>
